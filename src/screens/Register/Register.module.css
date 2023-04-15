@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+p.copyright {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 62px;
+}
+.form__container {
+    background-color: #fff;
+    max-width: 476px; 
+    padding: 40px;
+    box-shadow: 0  4px 30px 6px #CBCBCB;
+    transition: all 500ms ease-in-out;
+    border: none;
+    overflow: hidden;
+    margin: 20px;
+}
+.form__container:hover {
+    border: 3px rgba(13, 44, 84, 82%) solid;
+    box-shadow: 0  4px 30px 6px #d4af3752;
+    cursor: pointer;
+    border-radius: 35px;
+}
+input { 
+    width: 90%;
+    margin-top: 11px;
+    margin-bottom: 12px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 45px;
+    border-radius: 7px;
+    outline: none;
+    border-width: 2px;
+    border-style: solid;
+}
+button {
+    width: 100%;
+    border-radius: 7px;
+    padding: 13px;
+    margin-top: 30px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 26px;
+}
+.login__options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+.login__options > div {
+    width: 55px;
+    height: .5px;
+    background-color: rgba(13, 44, 84, 0.212);
+}
+.login__options > p {
+    font-size: 16px;
+} 
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.SigninOption>button {
+    background: none;
+    width: fit-content;
+    height: fit-content;
+    border: none;
+}
+.SigninOption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.loaderBg {
+    box-shadow: 0  4px 30px 6px #d4af3752;
+    cursor: pointer;
+    background: "#E3E3E3";
+    backdrop-filter: blur(5px);
+}
+.loader {
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    border-top: 8px solid #0D2C54;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 500ms linear infinite; /* Safari */
+    animation: spin 500ms linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
